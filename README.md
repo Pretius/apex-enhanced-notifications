@@ -67,6 +67,11 @@ Not yet defined
 To successfully install/update the plugin follow those steps:
 1. Install the plugin file `dynamic_action_plugin_pretius_apex_nested_reports.sql` using Oracle APEX plugin import wizard
 1. Configure application level componenets of the plugin
+1. When asked whether "Use Universal Theme templates" select "No" and proceed with wizard.*
+
+`* Selecting Yes means that the plugin will fetch SUCCESS_MESSAGE and NOTIFICATION_MESSAGE UT templates from APEX tables.`
+
+`* Selecting No means that the plugin will use plugin SUCCESS_MESSAGE and NOTIFICATION_MESSAGE templates.`
 
 ## Usage guide
 
