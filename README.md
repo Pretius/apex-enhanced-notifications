@@ -7,7 +7,26 @@ The plugin is dynamic action plugin providing notifications for Oracle APEX 5 an
 ![Alt text](/preview.gif?raw=true "Preview")
 
 ## Table of Contents
-TBD
+- [Pretius APEX Notifications](#pretius-apex-notifications)
+  - [Oracle APEX dynamic action plugin v1.0](#oracle-apex-dynamic-action-plugin-v10)
+- [Preview](#preview)
+- [Table of Contents](#table-of-contents)
+- [License](#license)
+- [Demo Application](#demo-application)
+- [Features at Glance](#features-at-glance)
+- [Roadmap](#roadmap)
+- [Install](#install)
+  - [Installation package](#installation-package)
+  - [Install procedure](#install-procedure)
+- [Usage guide](#usage-guide)
+- [Changelog](#changelog)
+  - [1.0](#10)
+- [About Author](#about-author)
+- [About Pretius](#about-pretius)
+- [Support](#support)
+  - [Free support](#free-support)
+  - [Paid support](#paid-support)
+
 
 ## License
 MIT
@@ -16,11 +35,25 @@ MIT
 [http://apex.pretius.com/apex/f?p=105:NOTIFICATIONS](http://apex.pretius.com/apex/f?p=105:NOTIFICATIONS)
 
 ## Features at Glance
-APEX like appearance
-Message can be static text or result of the JavaScript function
-Floating and inline notifications
-Support for "Modal page close event" and "Custom event"
-Highly configurable:
+* APEX like appearance
+* Message can be static text or result of the JavaScript function
+* Floating and inline notifications
+* Support for "Modal page close event" and "Custom event"
+* Highly configurable:
+  * floating and inline common attributes
+    * three types: Success, Warning, Error
+    * duration of presentation
+    * remove animation: fade out, slide up, remove
+    * show new notification on top or bottom of the queue
+    * message can be single-line or single-line with additional list of messages
+  * floating attributes
+    * four positions: top right, top left, bottom left, bottom right
+  * inline attributes
+    * fixed position
+    * scroll browser to notification
+    * mergeable with existing notificaitions
+    * remove existing notifications
+    * show bullets for list elements    
 
 ## Roadmap
 Not yet defined
@@ -28,14 +61,10 @@ Not yet defined
 ## Install 
 
 ### Installation package
-1. `src/PRETIUS_APEX_NESTED_REPORTS.sql` - the plugin package specification
-1. `src/PRETIUS_APEX_NESTED_REPORTS.plb` - the plugin package body
-1. `src/dynamic_action_plugin_pretius_apex_nested_reports.sql` - the plugin installation files for Oracle APEX 5.1 or higher
-
+1. `src/dynamic_action_plugin_pretius_com_notifications.sql` - the plugin installation file for Oracle APEX 5.1 or higher
 
 ### Install procedure
 To successfully install/update the plugin follow those steps:
-1. Install package `PRETIUS_APEX_NESTED_REPORTS` in Oracle APEX Schema owner (ie. via SQL Workshop)
 1. Install the plugin file `dynamic_action_plugin_pretius_apex_nested_reports.sql` using Oracle APEX plugin import wizard
 1. Configure application level componenets of the plugin
 
