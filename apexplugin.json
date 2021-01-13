@@ -1,23 +1,26 @@
 {
-  "name" : "Pretius APEX Enhanced Notifications",
+  "name" : "Pretius Enhanced Notifications",
   "version" : "1.0",
   "description" : "The plugin is dynamic action plugin providing notifications for Oracle APEX 5 and Universal Theme. Due to highly configurable attributes, the plugin can be used as presentation layer for AJAX callbacks. Translated messages from the database can be easly presented in two types of notification.",
   "keywords" : ["notification", "ajax", "inline", "floating"],
   "homepage" : "https://github.com/Pretius/apex-enhanced-notifications",
   "bugs" : {
     "url" : "https://github.com/Pretius/apex-enhanced-notifications/issues",
-    "email" : "apex@pretius.com"
+    "email" : "apex-plugins@pretius.com"
   },
   "license" : "MIT",
+  "commercial" : "No",
+  "commercially_supported":"No",  
   "author" : {
-    "name" : "Bartosz Ostrowski",
-    "email" : "bostrowski@pretius.com",
-    "url" : "http://pretius.com/technologies/oracle-apex/"
+    "name" : "Pretius",
+    "email" : "apex-plugins@pretius.com",
+    "url" : "http://www.pretius.com",
+    "twitter": "PretiusSoftware"
   },
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/Pretius/apex-enhanced-notifications/apex-nested-reports.git"
-  },
+    "url" : "https://github.com/Pretius/apex-enhanced-notifications.git"
+  },  
   "oracle" : {
     "versions" : ["11.2.0.1", "12.1.0.1"],
     "apex" : {
